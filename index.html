@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   
+  <section class="banner">
+    <div class="box content">
+    <header>
+       <a href="#" class="logo">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul>
+                    <li><a href="#">Ghibli Films</a></li>
+                    <li><a href="#">Best Rating</a></li>
+                    <li><a href="#">More</a></li>
+                </ul>
+    </header>
+
+    <div class="contentbox">
+        <img src="images/a.png" alt="whisper">
+                <h2>"It must be great to know what you want to do."<h2>
+                  <br>
+                <p>A young girl and bookworm finds that all the books she <br>
+            chooses in the library have been previously checked out by <br>
+        the same boy. Later she meets a very infuriating fellow. <br>
+    Could it be her `friend' from the library?</p>
+                <a href="#" class="button" onclick="toggle();">Watch Trailer</a>
+      </div>
+    <div class="follow">
+                <h3>Follow us on: </h3>
+                <li><a href="#"><img src="images/facebook.png" alt="fb"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="ig"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="twt"></a></li>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="trailer">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/0pVkiod6V0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img src="images/close.png" class="close" onclick = "toggle();">
+    </div>
+    <script type="text/javascript">
+         function toggle(){
+             var trailer = document.querySelector('.trailer');
+             var video = document.querySelector('.video');
+             trailer.classList.toggle('active')
+             video.currentTime = 0;
+             video.pause();
+         }
+    </script>
+
+</body>
+</html>
+    
